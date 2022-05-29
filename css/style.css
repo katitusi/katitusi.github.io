@@ -473,8 +473,13 @@ p input#plz {
     font-size: 1.125rem;
     border: none;
     outline: none;
+<<<<<<< HEAD
     right: 50%;
     width: 4%;
+=======
+    right: 47.5%;
+    width: 5%;
+>>>>>>> 5e9718cda7c4befed920d49b813e6de240ee1061
 }
   /*-----------CHECK-BOX----------*/
   
