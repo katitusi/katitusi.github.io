@@ -1,0 +1,704 @@
+/* noto-sans-georgian-regular - georgian */
+@font-face {
+    font-family: 'Noto Sans Georgian';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/noto-sans-georgian-v28-georgian-regular.woff2') format('woff2');
+}
+  /* noto-sans-georgian-700 - georgian */
+  @font-face {
+    font-family: 'Noto Sans Georgian';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/noto-sans-georgian-v28-georgian-700.woff2') format('woff2');
+  }
+  /* noto-sans-display-200 - latin */
+@font-face {
+    font-family: 'Noto Sans Display';
+    font-style: normal;
+    font-weight: 200; 
+    src: local(''),
+         url('../fonts/noto-sans-display-v16-latin-200.woff2') format('woff2');
+  }
+  /* noto-sans-display-regular - latin */
+  @font-face {
+    font-family: 'Noto Sans Display';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/noto-sans-display-v16-latin-regular.woff2') format('woff2');
+  }
+
+  html {
+    scroll-behavior: smooth;
+   }
+   
+  body {
+      font-size: 1.25rem;
+      font-family: 'Noto Sans Georgian';
+      color: #726554;
+  }
+  #page{
+      max-width: 1280px;
+      margin: auto;
+  }
+  img{
+      max-width: 100%;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+   } 
+ul {
+    margin: 3em;
+    padding: 0;
+    }
+    
+#test {
+	 max-width: 100%;
+}
+#image-logo{
+	    max-width: 100%;
+}
+#image-lupe{
+    width: 2em;
+ 
+}
+.logo{
+	width: 12em;
+    margin-right: 5em;
+}
+    
+    * {
+    box-sizing: border-box;
+    }
+    
+   
+    h1 {
+    font-size: 1.5em;
+    font-family: 'Noto Sans Display';
+    }
+    .siteheader {
+        display: flex;
+       /* align-items: baseline;*/
+        justify-content: center;
+        margin-top: 3em;
+        align-items: baseline;
+    }
+  .lupe {
+    align-self: self-end;
+    padding-bottom: 1.5em;
+  }
+
+/* Burgermenu ein- und ausblenden */
+
+.burgermenu {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    display: none;
+}
+
+    /* ------ Navigation -------*/
+nav li {
+    display: inline-block;
+    list-style-type: none;
+    text-transform: uppercase;
+    padding-right: 1em;
+}
+
+nav li:last-child {
+    text-align: center;
+    padding-right: 1.05;
+}
+nav a {
+text-decoration: none;
+color: #000000;
+}
+/*----Transition für die Menupunkte----*/
+
+.mainnavigation a {
+    font-size: 1.2rem;
+    font-family: 'Noto Sans Georgian';
+    color: rgb(112, 104, 87);
+}
+    
+    .mainnavigation a::after {
+        content:'';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        border-bottom: 2px solid rgb(248, 42, 42);
+        width: 0%;
+        transition: width 0.6s;
+    }
+    .mainnavigation a:hover::after {
+        width: 100%;
+    }
+    /* Burgermenu ein- und ausblenden */
+    .burgermenu {
+        position: absolute;
+        top: 0.5em;
+        right: 0.5em;
+        display: none;
+    }
+    .icons1 {
+    text-align: center;
+    right: 50%;
+    }
+    .icons2 {
+        text-align: center;
+        }
+    /*------------------------Box1--------------------------*/
+
+    .background1 {
+        background-color: #fdf4e2;
+        /*Raster*/
+        padding: 3.3em;
+    }
+    h1 {
+		line-height: 0.20;
+        font-family: 'Noto Sans Georgian';
+        font-size: 2em;
+        color: #7b6f61;
+    }
+    h2 {
+        font-family: 'Noto Sans Display';
+        color: rgb(123, 111, 97);
+        font-size: 1.7em;
+        padding: 3em 0;
+        /* line-height: 5em; */
+    }
+    p {
+        line-height: 1.5;
+		
+    }
+
+    .box1 {
+        background-color: #ccbfa23d;
+        padding: 1em 0 3em 0;
+    }
+    .box1 header{
+        text-align: center;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        gap: 1em;
+        align-items: start;
+        align-content: start;
+    }
+    .grid div{
+        width: 90%;
+   }
+    .ohne-margin{
+        margin: 0;
+}
+/*---------------------------Button--------------------------*/
+
+    .button {
+        box-shadow: 0px 0px 5px rgb(241, 212, 158), 0px 0px 10px rgb(236, 170, 137);
+        background-color: rgb(247, 243, 238);
+        padding: 0.7em;
+        margin-top: 2em;
+        text-align: center;
+    }
+    .button a{
+        color: rgb(117, 103, 86);
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    /*------------------------Neuheiten----------------------*/
+    .grid-neuheiten{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        align-items: center;
+        justify-items: center;
+    }
+    #neuheiten h2{
+        font-family: 'Noto Sans Georgian';
+        text-align: center;
+        color: #7B6F61;
+    }
+    #neuheiten .linie1{
+       border-bottom: 1px solid #e08114;
+        width: 40%;    
+        justify-self: right;
+    }
+    #neuheiten .linie2{
+        border-bottom: 1px solid #e08114;
+         width: 40%;
+         justify-self: left;
+     }
+    .background2 {
+        background-color: rgb(255, 255, 255);
+        /*Raster*/
+        padding: 5em;
+        margin-top: 3em;
+    }
+    h3 {
+        text-align: center;
+        font-size: 1.35em; 
+        margin-top: -1em;
+       }
+    h4 {
+        text-align: center;
+        font-size: 1.1em;
+        margin-top: 1em;
+       }
+    .orange {
+        text-align-last: auto;
+        width: 17em;
+        hyphens: auto;
+        margin: 1em auto;
+        line-height: 1.3;
+    }
+    .ingwer {
+        text-align-last: auto;
+        width: 17em;
+        hyphens: auto;
+        margin: 1em auto;
+        line-height: 1.3;
+    }
+    .hasselnuss {
+        text-align-last: auto;
+        width: 17em;
+        hyphens: auto;
+        margin: 1em auto;
+        line-height: 1.3;
+    }
+    .kokos {
+        text-align-last: auto;
+        width: 17em;
+        hyphens: auto;
+        margin: 1em auto;
+        line-height: 1.3;
+    }
+    .cafe {
+        text-align-last: auto;
+        width: 17em;
+        hyphens: auto;
+        margin: 1em auto;
+        line-height: 1.3;
+    }
+
+    .pralinen {
+        font-family: 'Noto Sans Georgian';
+        text-align: center;
+        font-size: 1em;
+        color: #AA9985;
+        margin-top: 1em;
+        margin-bottom: -2em;
+        width: 100%;
+        position: relative;
+        line-height: 1.4;
+        }
+
+/*-----------Transition------------*/
+div.transition {
+    text-align: center;
+}
+
+div.transition:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.wisky{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+/*-разделили ячейки на две части и расставили фото по два сверху и снизу.-*/
+section.galerie {
+ background-color: rgb(255, 255, 255);
+ border-radius: 0%;
+ display:grid;
+ grid-gap: 1em;
+ grid-template-columns: 1fr 1fr; 
+}
+
+section.galerie1 {
+    background-color: rgb(255, 255, 255);
+    display:grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr; 
+   }
+
+.transition5 {
+margin-right: 15em;
+align-items: center;
+}
+/*--------------------------------Alvarez---------------------------*/
+.grid-alvarez{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    align-items: center;
+    justify-items: center;
+}
+#alvarez h2{
+    font-family: 'Noto Sans Georgian';
+    text-align: center;
+    color: #7B6F61;
+}
+#alvarez .linie1{
+   border-bottom: 1px solid #e08114;
+    width: 40%;
+    justify-self: right;
+}
+#alvarez .linie2{
+    border-bottom: 1px solid #e08114;
+     width: 40%;
+     justify-self: left;
+ }
+
+ .text2 {
+    
+    width: 80%;
+    hyphens: auto;
+    margin: 1em auto;
+ }   
+
+ .text3 {
+    text-align-last: auto;
+    width: 80%;
+    hyphens: auto;
+    margin: 1em auto;
+ }
+ .text4 {
+    text-align: center;
+    width: 80%;
+    hyphens: auto;
+    margin: 1em auto;
+ }
+ .text5 {
+    text-align: center;
+    font-family: 'Noto Sans Georgian';
+    color: #7B6F61;
+    font-size: 1.2em;
+ }
+
+ /*-------------------Kontakt------------------*/
+.grid-kontakt{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    align-items: center;
+    justify-items: center;
+}
+#kontakt h2{
+    font-family: 'Noto Sans Georgian';
+    text-align: center;
+    color: #7B6F61;
+}
+#kontakt .linie1{
+   border-bottom: 1px solid #e08114;
+    width: 40%;
+    justify-self: right;
+}
+#kontakt .linie2{
+    border-bottom: 1px solid #e08114;
+     width: 40%;
+     justify-self: left;
+ }
+/*---------------------KONTAKTFORMULAR-----------------*/
+
+#termine {
+    border: 1px solid rgb(180, 157, 93);
+    border-radius: 7px;
+}
+form {
+    width: 75%;
+    margin: auto;
+    border-radius: 7px;
+}
+input[type="text"],
+input[type="email"] {
+    width: 50%;
+    border: 1px solid rgb(180, 157, 93);
+    padding: 0.3em;
+    font-size: 1rem;
+    border-radius: 7px;
+}
+
+input::placeholder {
+    color: rgb(173, 156, 135);
+}
+
+label {
+    border-radius: 7px;
+    padding-right: 1em;
+    display: inline-block;
+    text-align: left;
+    width: 20%;
+}
+
+p input#strasse,
+p input#ort {
+    width: 37%;
+}
+
+p input#nr,
+p input#plz {
+    width: 11%;
+}
+
+/*---------------------BilderGalerie--------------------*/
+
+.bildergalerie {
+ padding-left: 6%;
+ padding-right: 6%;
+}
+.kakao{
+    text-align: center;
+}
+.kakao img{
+    padding: 1em;
+}
+#myBtnTop {
+    display: none;
+    position: fixed;
+    bottom: 1.25rem;
+    z-index: 99;
+    font-size: 1.125rem;
+    border: none;
+    outline: none;
+    right: 50%;
+    width: 5%;
+}
+  /*-----------CHECK-BOX----------*/
+  
+  .check-box {
+  text-align: center;
+  text-align-last: auto;
+  width: 80%;
+  hyphens: auto;
+  margin: 2em auto;
+  line-height: 1.7;
+  }
+  
+  .textSP {
+      font-family: 'Noto Sans Display';
+      color: rgb(123, 111, 97);
+      font-size: 1.1em;
+      padding: 0.5em 0;
+      line-height: 1.1em;
+      padding-bottom: 2em;
+  }
+  .submit {
+    border-radius: 20px;
+    color: blue;
+  }
+ 
+/*-----------BERATEN----------*/
+.beraten {
+    text-align: center;
+    font-family: 'Noto Sans Georgian';
+    color: #7B6F61;
+    font-size: 2.5rem;
+}
+.praline-gross {
+    text-align-last: auto;
+    width: 35em;
+    hyphens: auto;
+    margin: -4em auto;
+    line-height: 3em;
+    }
+/*----------------------Footer------------------------*/
+#box2 {
+    background-color: #f1e5d1;
+    border-radius: 2em;
+    text-align: center;
+    height: 7em;
+    width: 25em;
+    padding: 1em 0 1em 0;
+    margin: auto;
+    }
+/*.styl { 
+    color: rgb(117, 103, 86);
+        text-decoration: none;
+        text-transform: uppercase;
+  }*/
+    #box3 {
+        background-color: #f1e5d1;
+        border-radius: 2em;
+        text-align: center;
+        height: 30em;
+        width: 29em;
+        padding: 4em 0 4em 0;
+        margin: auto;
+        }
+.content {
+    text-align: center;
+    font-family: 'Noto Sans Georgian';
+    color: hsl(32, 12%, 43%);
+    font-size: 1.5rem;
+}
+ /*-------------Mediaqueries---------*1024px*-------------*/
+
+ @media(max-width:63em) {
+    nav li:last-child {
+        padding-right: 0;
+    }
+    .lupe {
+        display: none;
+    }
+    .siteheader {
+        display: block;
+    }
+    .logo {
+        margin: auto;
+    }
+    .burgermenu {
+        display: block;
+        cursor: pointer;
+    }
+    .mainnavigation {
+        height: 0;
+        transition: height 2s;
+        overflow: hidden;
+        text-align: center;
+    }
+    .main-navigation-expanded{
+        height: 10em;
+    }
+    .mainnavigation li {
+        display: block;
+        padding: 0.5em 0;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 1em;
+        align-items: center;
+        align-content: center;
+    }
+    section.galerie {
+        display: block;
+    }
+    div.transition {
+        text-align: center;
+    }
+    div.button {
+        width: 40%;
+        margin: auto;
+    }
+    /*Burgermenü*/
+}
+/*ca.------------------------- 860px-----------------------*/
+ @media(max-width:56em) {
+     .praline-gross {
+         width: 70%;
+         margin-top: 3em;
+     }
+     #box2 {
+        background-color: #f1e5d1;
+        border-radius: 2em;
+        text-align: center;
+        padding: 1em 0 1em 0;
+        height: auto;
+        width: auto;
+    }
+    .background1 {
+        background-color: #fdf4e2;
+        padding: 0.5em;
+    }
+    .background2 {
+        background-color: rgb(255, 255, 255);
+        margin-top: 0em;
+      }
+
+    #kontakt h2 {
+        padding: 0;
+    }
+    .praline-gross {
+        text-align-last: auto;
+        hyphens: auto;
+        margin: 0;
+        line-height: 3em;
+    }
+    #pralineimg {
+        display: flex;
+        justify-content: center;
+    }
+    input[type="text"], input[type="email"] {
+        width: 70%;
+    }
+    p input#strasse, p input#ort {
+        width: 60%;
+    }
+    p input#strasse, p input#ort {
+        width: 70%;
+    }
+    #alvarez h2 {
+        margin: 0 auto;
+    }
+    div.kokos, div.orange, div.ingwer, div.hasselnuss, div.cafe{
+        width: auto;
+        text-align: center;
+        padding: 10%;
+    }
+    .background2 {
+        padding: 1.5em;
+        margin-bottom: 0.7em;
+    }
+    #contact{
+        display: none;
+    }
+    #alvarez .linie2{
+        margin-left: 1em;
+    }
+    #alvarez .linie1 {
+        margin-right: 1em;
+    }
+    #neuheiten .linie2{
+        margin-left: 2em;
+    }
+    #neuheiten .linie1{
+        margin-right: 2em;
+    }
+    div.button {
+        width: 80%;
+    }
+    .ohne-margin {
+        margin-left: 5%;
+        margin-bottom: 10%;
+    }
+    .h2 {
+        font-family: 'Noto Sans Display';
+        color: rgb(123, 111, 97);
+        font-size: 1.7em;
+        line-height: 0.1em;
+        margin-top: 3em;
+        }
+}
+
+/*Kleine Geräte (Tablet im Hochformat und große Smartphones, 1273px und größer)*/
+@media only screen and (min-width: 1273px){
+
+}
+
+
+
+
+/*Kleine Geräte (Tablet im Hochformat und große Smartphones, 600px und größer)*/
+@media only screen and (min-width: 600px){
+
+}
+
+
+
+/*Mittlere Bildschirmgröße (Tablets, 768px und größer)*/
+@media only screen and (min-width: 768px){
+
+}
+
+
+/*Große Geräte (Laptops/Desktops, 992px und größer)*/
+@media only screen and (min-width: 992px){
+
+}
+
+
