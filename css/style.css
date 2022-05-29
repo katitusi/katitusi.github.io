@@ -1,4 +1,4 @@
-/* noto-sans-georgian-regular - georgian */
+﻿/* noto-sans-georgian-regular - georgian */
 @font-face {
     font-family: 'Noto Sans Georgian';
     font-style: normal;
@@ -465,7 +465,7 @@ p input#plz {
     font-size: 1.125rem;
     border: none;
     outline: none;
-    right: 50%;
+    right: 47.5%;
     width: 4%;
 }
   /*-----------CHECK-BOX----------*/
