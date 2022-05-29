@@ -1,4 +1,4 @@
-﻿/* noto-sans-georgian-regular - georgian */
+/* noto-sans-georgian-regular - georgian */
 @font-face {
     font-family: 'Noto Sans Georgian';
     font-style: normal;
@@ -235,8 +235,8 @@ color: #000000;
     .background2 {
         background-color: rgb(255, 255, 255);
         /*Raster*/
-        padding: 5em;
-        margin-top: 3em;
+        padding: 3.5em;
+        margin-top: 0.70em;
     }
     h3 {
         text-align: center;
@@ -444,7 +444,15 @@ p input#nr,
 p input#plz {
     width: 11%;
 }
-
+#submit {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    border-radius: 25em;
+    color: #726554;
+    background-color: #ffffff;
+}
 /*---------------------BilderGalerie--------------------*/
 
 .bildergalerie {
@@ -465,8 +473,8 @@ p input#plz {
     font-size: 1.125rem;
     border: none;
     outline: none;
-    right: 47.5%;
-    width: 5%;
+    right: 50%;
+    width: 4%;
 }
   /*-----------CHECK-BOX----------*/
   
@@ -509,11 +517,11 @@ p input#plz {
 /*----------------------Footer------------------------*/
 #box2 {
     background-color: #f1e5d1;
-    border-radius: 2em;
+    border-radius: 55em;
     text-align: center;
     height: 7em;
     width: 25em;
-    padding: 1em 0 1em 0;
+    padding: 1em 0 8em 0;
     margin: auto;
     }
 /*.styl { 
@@ -595,9 +603,9 @@ p input#plz {
      }
      #box2 {
         background-color: #f1e5d1;
-        border-radius: 2em;
+        border-radius: 55em;
         text-align: center;
-        padding: 1em 0 1em 0;
+        padding: 1em 0 8em 0;
         height: auto;
         width: auto;
     }
@@ -632,6 +640,7 @@ p input#plz {
     p input#strasse, p input#ort {
         width: 70%;
     }
+    }
     #alvarez h2 {
         margin: 0 auto;
     }
@@ -641,8 +650,8 @@ p input#plz {
         padding: 10%;
     }
     .background2 {
-        padding: 1.5em;
-        margin-bottom: 0.7em;
+        padding: 3.5em;
+        margin-bottom: 0em;
     }
     #contact{
         display: none;
@@ -673,7 +682,18 @@ p input#plz {
         line-height: 0.1em;
         margin-top: 3em;
         }
-}
+        #myBtnTop {
+            display: none;
+            position: fixed;
+            bottom: 1.25rem;
+            z-index: 99;
+            font-size: 1.125rem;
+            border: none;
+            outline: none;
+            right: 50%;
+            width: 5%;
+        }
+
 
 /*Kleine Geräte (Tablet im Hochformat und große Smartphones, 1273px und größer)*/
 @media only screen and (min-width: 1273px){
@@ -685,7 +705,7 @@ p input#plz {
 
 /*Kleine Geräte (Tablet im Hochformat und große Smartphones, 600px und größer)*/
 @media only screen and (min-width: 600px){
-
+   
 }
 
 
@@ -694,7 +714,17 @@ p input#plz {
 @media only screen and (min-width: 768px){
 
 }
-
+#myBtnTop {
+    display: none;
+    position: fixed;
+    bottom: 1.25rem;
+    z-index: 99;
+    font-size: 1.125rem;
+    border: none;
+    outline: none;
+    right: 50%;
+    width: 5%;
+}
 
 /*Große Geräte (Laptops/Desktops, 992px und größer)*/
 @media only screen and (min-width: 992px){
